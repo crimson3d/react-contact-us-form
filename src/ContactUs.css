@@ -5,7 +5,6 @@
 }
 
 .main {
-  background-color: white;
   padding: 2.5rem;
   border-radius: 10px;
   display: flex;
@@ -46,16 +45,6 @@
   align-items: center;
   font-size: 1rem;
 }
-
-.field__input:focus,
-.field__input:active,
-.email__input:focus,
-.email__input:active,
-.message__textarea:focus,
-.message__textarea:active {
-  border: 2px solid hsl(169, 82%, 27%);
-}
-
 
 .message__textarea {
   min-height: 6.5rem;

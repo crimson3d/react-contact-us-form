@@ -2,10 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -53,9 +54,11 @@ button {
   transition: border-color 0.25s;
   color: white;
 }
+
 button:hover {
   cursor: pointer;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -63,13 +66,63 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --text-color: hsl(187, 24%, 22%);
+    --background-color: hsl(148, 38%, 91%);
+    --button-color: white;
+    --button-background-color: hsl(169, 82%, 27%);
+    --input-focus-border-color: hsl(169, 82%, 27%);
+    --form--background-color: white;
   }
-  a:hover {
-    color: hsl(187, 24%, 22%);
+
+  body {
+    color: var(--text-color);
+    background-color: var(--background-color);
   }
+
   button {
-    hsl(169, 82%, 27%);
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+  }
+
+  .field__input:focus {
+    border-color: var(--input-focus-border-color);
+  }
+
+  .main {
+    background-color: var(--form--background-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: hsl(0, 0%, 90%);
+    --background-color: hsl(210, 30%, 8%);
+    --link-hover-color: hsl(210, 30%, 18%);
+    --button-color: hsl(0, 0%, 100%);
+    --button-background-color: hsl(169, 82%, 27%);
+    --input-focus-border-color: hsl(169, 82%, 27%);
+    --form--background-color: hsl(210, 30%, 12%);
+  }
+
+  body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+  }
+
+  button {
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+  }
+
+  .field__input:focus {
+    border-color: var(--input-focus-border-color);
+  }
+
+  .main {
+    background-color: var(--form--background-color);
   }
 }
