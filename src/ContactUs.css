@@ -69,6 +69,11 @@
   border: 2px solid red;
 }
 
+.consent__label {
+  display: flex;
+  align-items: center;
+}
+
 .success__message {
   position: fixed;
   top: 80px;
