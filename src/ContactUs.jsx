@@ -43,7 +43,7 @@ function ContactUs() {
       }}
     >
       {({ errors, touched, isSubmitting }) => (
-        <Form className="main">
+        <Form className="main" netlify>
           {isSubmitted && (
             <div className="success__message">
               <div className="message__title">
