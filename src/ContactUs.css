@@ -44,6 +44,7 @@
   min-height: 3.1rem;
   display: flex;
   align-items: center;
+  font-size: 1rem;
 }
 
 .field__input:focus,
